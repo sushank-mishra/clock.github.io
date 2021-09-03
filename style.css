@@ -1,0 +1,71 @@
+html{
+    align-items: center;
+}
+
+body{
+    background: url(/Clock/wood-1776042_1920.jpg);
+    background-size: cover;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 90vh;
+    margin: 0px;
+}
+
+.clock{
+    position: absolute;
+    border: 20px solid #FDF4E3;
+    border-radius: 50%;
+    width:30rem;
+    height:30rem;
+    right: 50px;
+    top:50px;
+    padding: 2rem;
+    background-color: rgba(128, 128, 128, 0.329) ;
+    box-shadow:
+        0 0 0 4px rgba(211, 199, 30, 0.466),
+        inset 0 0 0 3px #c5e635,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2);
+}
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* account for the height of the clock hands */
+  }
+.hand {
+    width: 50%;
+    height: 6px;
+    border-radius: 10px;
+    background:linear-gradient(  to left, #E1C391 , #fdf4e3, #c5e635);;
+    position: absolute;
+    top: 50%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.4, 0.74);
+  }
+
+.hand p{
+    font-size: 20px;
+    color:antiquewhite;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-kerning: auto;
+}
+
+.name p{
+    font-size: 45px;
+    background:linear-gradient(to right,rgba(224, 38, 38, 0.856),rgba(34, 148, 34, 0.699),rgba(43, 43, 184, 0.795));
+    width:auto;
+    margin-left:40px;
+    color:antiquewhite;
+    writing-mode: vertical-rl;
+text-orientation: upright;
+}
+
+
+
+  
